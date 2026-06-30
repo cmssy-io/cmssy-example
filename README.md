@@ -4,11 +4,13 @@ A minimal, runnable [Next.js](https://nextjs.org) (App Router) site powered by t
 headless [cmssy](https://www.cmssy.io) CMS. Clone it, point it at a workspace, and you
 have an editable, SEO-ready site with three example blocks.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/cmssy-io/cmssy-demo&env=CMSSY_WORKSPACE_SLUG,CMSSY_DRAFT_SECRET&envDescription=Your%20cmssy%20workspace%20slug%20and%20a%2016%2B%20character%20draft%20secret&envLink=https://www.cmssy.io/docs/installation&project-name=cmssy-demo&repository-name=cmssy-demo)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/cmssy-io/cmssy-demo&env=CMSSY_WORKSPACE_SLUG,CMSSY_DRAFT_SECRET&envDescription=Your%20cmssy%20workspace%20slug%20and%20draft%20secret%20from%20Settings%20-%20Headless&envLink=https://www.cmssy.io/docs/installation&project-name=cmssy-demo&repository-name=cmssy-demo)
 
-> **Try it instantly.** To see the starter render real content before creating your own
-> workspace, use the public demo workspace: set `CMSSY_WORKSPACE_SLUG=cmssy-demo` and any
-> 16+ character string for `CMSSY_DRAFT_SECRET`. Swap in your own slug whenever you're ready.
+> **Try it instantly.** To render the published demo content before creating your own
+> workspace, set `CMSSY_WORKSPACE_SLUG=cmssy-demo`. `CMSSY_DRAFT_SECRET` is required by the
+> config but is only verified for _draft preview_ (which needs your own workspace), so any
+> 16+ character placeholder renders the published pages. For your own site, use the real
+> secret generated under **Settings → Headless** (see below).
 
 ## What's inside
 
@@ -34,10 +36,10 @@ npm run dev                 # http://localhost:3000
 
 Only two values are required (cmssy cloud handles the rest):
 
-| Variable               | Where to find it                                    |
-| ---------------------- | --------------------------------------------------- |
-| `CMSSY_WORKSPACE_SLUG` | cmssy dashboard -> Settings -> Headless             |
-| `CMSSY_DRAFT_SECRET`   | cmssy dashboard -> Settings -> Headless (16+ chars) |
+| Variable               | Where to find it                                                                         |
+| ---------------------- | ---------------------------------------------------------------------------------------- |
+| `CMSSY_WORKSPACE_SLUG` | cmssy dashboard -> Settings -> Headless                                                  |
+| `CMSSY_DRAFT_SECRET`   | cmssy dashboard -> Settings -> Headless (generated per workspace - copy the exact value) |
 
 `CMSSY_API_URL` and `CMSSY_EDITOR_ORIGIN` default to cmssy cloud and only need to be set
 for local-backend or self-hosted development. See `.env.example`.
