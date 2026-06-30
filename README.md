@@ -4,7 +4,7 @@ A minimal, runnable [Next.js](https://nextjs.org) (App Router) site powered by t
 headless [cmssy](https://www.cmssy.io) CMS. Clone it, point it at a workspace, and you
 have an editable, SEO-ready site with three example blocks.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/cmssy-io/cmssy-example&env=CMSSY_WORKSPACE_SLUG,CMSSY_DRAFT_SECRET&envDescription=Your%20cmssy%20workspace%20slug%20and%20a%2016%2B%20character%20draft%20secret&envLink=https://www.cmssy.io/docs/installation&project-name=cmssy-example&repository-name=cmssy-example)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/cmssy-io/cmssy-demo&env=CMSSY_WORKSPACE_SLUG,CMSSY_DRAFT_SECRET&envDescription=Your%20cmssy%20workspace%20slug%20and%20a%2016%2B%20character%20draft%20secret&envLink=https://www.cmssy.io/docs/installation&project-name=cmssy-demo&repository-name=cmssy-demo)
 
 > **Try it instantly.** To see the starter render real content before creating your own
 > workspace, use the public demo workspace: set `CMSSY_WORKSPACE_SLUG=cmssy-demo` and any
@@ -23,8 +23,8 @@ have an editable, SEO-ready site with three example blocks.
 ## Quickstart
 
 ```bash
-git clone https://github.com/cmssy-io/cmssy-example.git
-cd cmssy-example
+git clone https://github.com/cmssy-io/cmssy-demo.git
+cd cmssy-demo
 npm install
 cp .env.example .env        # then fill in the two values below
 npm run dev                 # http://localhost:3000

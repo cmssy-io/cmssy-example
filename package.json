@@ -1,5 +1,5 @@
 {
-  "name": "cmssy-example",
+  "name": "cmssy-demo",
   "version": "0.1.0",
   "private": true,
   "description": "Minimal, runnable example of a headless cmssy site on Next.js (App Router) with the cmssy SDK.",
