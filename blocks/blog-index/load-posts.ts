@@ -6,14 +6,18 @@ import { PUBLIC_PAGES_BY_TYPE } from "./posts-query";
 // module (and the GraphQL client) never reaches the browser bundle.
 const client = createCmssyClient(cmssy);
 
+// The delivery API returns translatable fields language-keyed (e.g.
+// `{ en: "Title" }`); resolve them with `pickLocale` in the component.
+export type Localized = string | Record<string, string> | null | undefined;
+
 export type Post = {
   id: string;
   slug: string;
   fullSlug: string;
   publishedAt?: string | null;
-  displayName?: string | null;
-  seoTitle?: string | null;
-  seoDescription?: string | null;
+  displayName?: Localized;
+  seoTitle?: Localized;
+  seoDescription?: Localized;
 };
 
 export type PostsResult = { items: Post[]; hasMore: boolean };
